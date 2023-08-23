@@ -1,0 +1,99 @@
+body{
+    background:#0f121f;
+    background-image:url(backgroundimg.jpg);
+    color:#fff;
+    
+}
+
+h1,h2,h3,h4{
+    font-weight: bold;
+    margin:0;
+}
+
+a:hover{
+
+    color:yellow;
+}
+a{
+    color:#fff;
+}
+
+div.descriptions{
+    max-width: 900px;
+    margin:0px auto;
+    font-size: large;
+    padding:10px;
+}
+
+h1{
+    text-align: center;
+    margin:20px auto;
+    font-size:xx-large;
+
+
+}
+nav{
+    justify-self:end;
+}
+
+nav li{
+    display:inline-block;
+    margin-left:10px;
+}
+
+nav button{
+    background:white;
+    color:black;
+    font-size:large;
+}
+div.description1{
+
+    display:grid;
+    padding:5px;
+    border:2px solid aqua;
+    margin:2px auto;
+    
+}
+.movie-details .movies{
+    padding:0;
+    text-align: center;
+    margin:2px auto;
+    font-size:large;
+    border:4px solid antiquewhite;
+
+}
+.formset{
+    margin-top: 50px;
+    border:4px solid silver;
+    padding:30px;
+
+}
+.formset input, .formset textarea{
+    display:block;
+    margin:30px 0 0 0;
+    padding:10px;
+
+}
+
+h2{
+    text-align: center;
+    margin:102px auto;
+    font-size:xx-large;  
+}
+
+a.movieadd{
+    background:white;
+    color:black;
+    font-size:large;
+    border:2px solid black;
+    padding:3px;
+}
+
+.formset input[type="submit"]{
+    background:aquamarine;
+    border:0;
+    color:black;
+    font-size:large;
+    border-radius:10px;
+    margin:15px 0;
+}

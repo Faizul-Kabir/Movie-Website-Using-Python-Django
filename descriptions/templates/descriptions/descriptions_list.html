@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <h1> Movie List</h1>
+    <br><br><br>
+     <div class ="descriptions">
+        {% for description in descriptions %}
+        <div class="description1">
+            <h2><a href="{% url 'descriptions:detail' title=description.title%}">{{description.title}}</a></h2>
+            <p>{{description.short}}</p>
+            <p>{{description.date}}</p>
+
+        </div>
+        {% endfor %}
+
+
+     </div>
+ {% endblock %}   

@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<div class="movie-details">
+    <div class="movies">
+        <img src="{{description.image.url}}" />
+        <h2> {{description.title}}</h2>
+        <p>  {{description.body}}</p>
+        <p> {{description.date}}</p>
+
+    </div>
+
+</div>  
+
+
+
+
+{% endblock %}   

@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movies</title>
+    <link rel="stylesheet" href="{% static 'styles2.css'%}">
+</head>
+<body>
+    <nav>
+        <ul>
+            {% if user.is_authenticated %}
+                <li>
+                    <form class="logout-form" action="{% url 'account:logout' %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit">LOGOUT</button>
+                    </form>
+                </li>
+                <li><a href="{% url 'descriptions:addmovie' %}" class="movieadd">ADD A MOVIE</a></li>
+             {% else %}
+                <li> <a href="{% url 'account:login' %}">LOGIN</a></li>
+                <li> <a href="{% url 'account:signup' %}">SIGNUP</a></li>
+
+             {% endif %}
+
+        </ul>
+            
+
+
+    </nav> 
+<div class="d1">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>    
